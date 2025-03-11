@@ -12,8 +12,8 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 app = Flask(__name__)
 
 # Load scaler and encoder 
-scaler = joblib.load("files\\scaler.pkl")
-encoder = joblib.load("files\\encoder.pkl")
+scaler = joblib.load("files/scaler.pkl")
+encoder = joblib.load("files/encoder.pkl")
 
 # Load all models dynamically from "models" directory
 MODEL_DIR = "models"
